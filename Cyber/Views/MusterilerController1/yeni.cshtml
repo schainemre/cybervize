@@ -1,0 +1,61 @@
+﻿@model Cyber.Models.Musteriler
+
+@{
+    ViewData["Title"] = "yeni";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>yeni</h1>
+
+<h4>Musteriler</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="yeni">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ID" class="control-label"></label>
+                <input asp-for="ID" class="form-control" />
+                <span asp-validation-for="ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AD" class="control-label"></label>
+                <input asp-for="AD" class="form-control" />
+                <span asp-validation-for="AD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SOYAD" class="control-label"></label>
+                <input asp-for="SOYAD" class="form-control" />
+                <span asp-validation-for="SOYAD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TCKIMLIKNO" class="control-label"></label>
+                <input asp-for="TCKIMLIKNO" class="form-control" />
+                <span asp-validation-for="TCKIMLIKNO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HIZMETYILI" class="control-label"></label>
+                <input asp-for="HIZMETYILI" class="form-control" />
+                <span asp-validation-for="HIZMETYILI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ISYERIADI" class="control-label"></label>
+                <input asp-for="ISYERIADI" class="form-control" />
+                <span asp-validation-for="ISYERIADI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TELEFONNO" class="control-label"></label>
+                <input asp-for="TELEFONNO" class="form-control" />
+                <span asp-validation-for="TELEFONNO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Oluştur" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Listele">Listeye Geri Dön</a>
+</div>
+

@@ -1,0 +1,61 @@
+﻿@model Cyber.Models.Musteriler
+
+@{
+    ViewData["Title"] = "Detay";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Detay</h1>
+
+<div>
+    <h4>Musteriler</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AD)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AD)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SOYAD)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SOYAD)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TCKIMLIKNO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TCKIMLIKNO)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HIZMETYILI)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HIZMETYILI)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ISYERIADI)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ISYERIADI)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TELEFONNO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TELEFONNO)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Güncelle", "Guncelle", new { id=Model.ID  }) |
+    <a asp-action="Listele">Listeye Geri Dön</a>
+</div>
